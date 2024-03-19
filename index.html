@@ -102,7 +102,7 @@
             <a class="navbar-brand" href="index.html">
               <img src="images/logo.png" alt="">
             </a>
-            </a>
+            
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
@@ -114,7 +114,7 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
+                  <a class="nav-link" href="service.html">Services </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html"> About</a>
@@ -412,52 +412,50 @@
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            
-							
-              <div class="slider-container">
+            <div class="slider-container">
                 
-                <div class="slider">
-                  <div class="slide"><img class="img-slider" src="images/borehole-drilling.png" alt="Image 1"></div>
-                  <div class="slide"><img class="img-slider" src="images/blast-hole.png" alt="Image 2"></div>
-                  <div class="slide"><img class="img-slider" src="images/Tandamanzi  (18) edited.png" alt="Image 3"></div>
-                  <div class="slide"><img class="img-slider" src="images/core-drilling.png" alt="Image 4"></div>
-                <!-- Add more slides as needed -->
-                </div>
-                
-                <!-- Optional: Add navigation buttons -->
-                <div class="prev" onclick="prevSlide()">&#10094;</div>
-                <div class="next" onclick="nextSlide()">&#10095;</div>
+              <div class="slider">
+                <div class="slide"><img class="img-slider" src="images/borehole-drilling.png" alt="Image 1"></div>
+                <div class="slide"><img class="img-slider" src="images/blast-hole.png" alt="Image 2"></div>
+                <div class="slide"><img class="img-slider" src="images/Tandamanzi  (18) edited.png" alt="Image 3"></div>
+                <div class="slide"><img class="img-slider" src="images/core-drilling.png" alt="Image 4"></div>
+              <!-- Add more slides as needed -->
               </div>
-              <script>
-                let currentSlide = 0;
               
-                function showSlide(index) {
-                const slider = document.querySelector('.slider');
-                const slides = document.querySelectorAll('.slide');
-              
-                if (index >= slides.length) {
-                  currentSlide = 0;
-                } else if (index < 0) {
-                  currentSlide = slides.length - 1;
-                } else {
-                  currentSlide = index;
-                }
-              
-                const translateValue = -currentSlide * 100 + '%';
-                slider.style.transform = 'translateX(' + translateValue + ')';
-                }
-              
-                function prevSlide() {
-                showSlide(currentSlide - 1);
-                }
-              
-                function nextSlide() {
-                showSlide(currentSlide + 1);
-                }
-              </script>
+              <!-- Optional: Add navigation buttons -->
+              <div class="prev" onclick="prevSlide()">&#10094;</div>
+              <div class="next" onclick="nextSlide()">&#10095;</div>
+            </div>
+            <script>
+              let currentSlide = 0;
             
-          </div>
+              function showSlide(index) {
+              const slider = document.querySelector('.slider');
+              const slides = document.querySelectorAll('.slide');
+            
+              if (index >= slides.length) {
+                currentSlide = 0;
+              } else if (index < 0) {
+                currentSlide = slides.length - 1;
+              } else {
+                currentSlide = index;
+              }
+            
+              const translateValue = -currentSlide * 100 + '%';
+              slider.style.transform = 'translateX(' + translateValue + ')';
+              }
+            
+              function prevSlide() {
+              showSlide(currentSlide - 1);
+              }
+            
+              function nextSlide() {
+              showSlide(currentSlide + 1);
+              }
+            </script>
+          
         </div>
+      </div>
 
       </div>
     </div>
@@ -533,7 +531,7 @@
           <div class="item load">
             <div class="box">
               <div class="img-box">
-                <img src="images/blast-hole.png" alt="" />
+                <img src="images/low-bed.png" alt="" />
                 <a href="" class="pin_link">
                   <i class="fa fa-link" aria-hidden="true"></i>
                 </a>
@@ -552,7 +550,7 @@
           <div class="item revcirc">
             <div class="box">
               <div class="img-box">
-                <img src="images/earth-moving2.png" alt="" />
+                <img src="images/reverse-circulation-drilling.png" alt="" />
                 <a href="" class="pin_link">
                   <i class="fa fa-link" aria-hidden="true"></i>
                 </a>
@@ -571,7 +569,7 @@
           <div class="item blasting">
             <div class="box">
               <div class="img-box">
-                <img src="images/low-bed.png" alt="" />
+                <img src="images/blast-hole.png" alt="" />
                 <a href="" class="pin_link">
                   <i class="fa fa-link" aria-hidden="true"></i>
                 </a>
