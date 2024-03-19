@@ -664,6 +664,46 @@ a:focus {
   background-color: rgb(255,102,0);
 }
 
+
+/*SERVICES SECTION*/
+/*ReadMore Section*/
+.text-container {
+  overflow: hidden;
+}
+
+
+
+#long-text-borehole {
+  transition: max-height 0.5s ease-in-out;
+}
+
+#long-text-diamond {
+  transition: max-height 0.5s ease-in-out;
+}
+
+#long-text-haul {
+  transition: max-height 0.5s ease-in-out;
+}
+
+#long-text-revcirc {
+  transition: max-height 0.5s ease-in-out;
+}
+
+#long-text-blast {
+  transition: max-height 0.5s ease-in-out;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th{
+  background-color: rgb(255, 102, 0);
+  color: white;
+}
+
 .service_section {
   position: relative;
 }
