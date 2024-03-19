@@ -132,46 +132,131 @@
                 </form>
               </ul>
               <div class="quote_btn-container">
-                <a href="" class="quote_btn">
-                  Get A Quote
-                </a>
+                <button id="openModal" class="btn-quote">Get a Quote!</button>
+                
               </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
-    <!-- end header section -->
+
+
+    <!--Popup Section-->
+    <div class="modal" id="modal">
+      <div class="modal-inner">
+        <button id="closeModal" class="btn-close">X</button>
+        <section class="contact_section layout_padding-bottom">
+          <div class="container-fluid">
+            <div class="col-lg-12 col-md-12">
+              <div class="heading_container">
+                <h2>
+                  Get your quote now!
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="form_container">
+                  <form action="">
+                    <div>
+                      <input type="text" placeholder="Your Name" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Phone Number" />
+                    </div>
+                    <div>
+                      <input type="email" placeholder="Email" />
+                    </div>
+                    <div>
+                      <input type="text" class="message-box" placeholder="Message" />
+                    </div>
+                    <div class="btn_box">
+                      <button>
+                        Get Quote!
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+    
   </div>
+  <!--End Popup-->
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <section class="about_section">
     <div class="container  ">
       <div class="row">
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Us
+                Our Mission
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              To provide an efficient service to all customers. Be driven by performance, meeting customer product and service expectations and continuous improvement in all aspects of our business by striving zealously to meet this goal. Be committed to investing back in to the community. With our strong commitment to quality, we envisage to become a pace setter and the company of choice within the industry by consistently striving to go beyond our client’s value expectations and required services.
             </p>
-            <a href="">
+            <a href="about.html">
               Read More
             </a>
           </div>
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/Tandamanzi  (18) edited.png" alt="">
-          </div>
+            <div class="slider-container">
+              <br>
+              <br>
+                
+              <div class="slider">
+                <div class="slide"><img class="img-slider" src="images/borehole-drilling.png" alt="Image 1"></div>
+                <div class="slide"><img class="img-slider" src="images/blast-hole.png" alt="Image 2"></div>
+                <div class="slide"><img class="img-slider" src="images/Tandamanzi  (18) edited.png" alt="Image 3"></div>
+                <div class="slide"><img class="img-slider" src="images/core-drilling.png" alt="Image 4"></div>
+              <!-- Add more slides as needed -->
+              </div>
+              
+              <!-- Optional: Add navigation buttons -->
+              <div class="prev" onclick="prevSlide()">&#10094;</div>
+              <div class="next" onclick="nextSlide()">&#10095;</div>
+            </div>
+            <script>
+              let currentSlide = 0;
+            
+              function showSlide(index) {
+              const slider = document.querySelector('.slider');
+              const slides = document.querySelectorAll('.slide');
+            
+              if (index >= slides.length) {
+                currentSlide = 0;
+              } else if (index < 0) {
+                currentSlide = slides.length - 1;
+              } else {
+                currentSlide = index;
+              }
+            
+              const translateValue = -currentSlide * 100 + '%';
+              slider.style.transform = 'translateX(' + translateValue + ')';
+              }
+            
+              function prevSlide() {
+              showSlide(currentSlide - 1);
+              }
+            
+              function nextSlide() {
+              showSlide(currentSlide + 1);
+              }
+            </script>
+          
         </div>
+      </div>
 
       </div>
     </div>
@@ -454,6 +539,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+  <!--Quote Popup-->
+  <script src="./js/popup.js"></script>
+  <!--End Quote Popup-->
 
 </body>
 

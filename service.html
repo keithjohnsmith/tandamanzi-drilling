@@ -133,16 +133,60 @@
                
               </ul>
               <div class="quote_btn-container">
-                <a href="" class="quote_btn">
-                  Get A Quote
-                </a>
+                <button id="openModal" class="btn-quote">Get a Quote!</button>
+                
               </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
-    <!-- end header section -->
+
+
+    <!--Popup Section-->
+    <div class="modal" id="modal">
+      <div class="modal-inner">
+        <button id="closeModal" class="btn-close">X</button>
+        <section class="contact_section layout_padding-bottom">
+          <div class="container-fluid">
+            <div class="col-lg-12 col-md-12">
+              <div class="heading_container">
+                <h2>
+                  Get your quote now!
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="form_container">
+                  <form action="">
+                    <div>
+                      <input type="text" placeholder="Your Name" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Phone Number" />
+                    </div>
+                    <div>
+                      <input type="email" placeholder="Email" />
+                    </div>
+                    <div>
+                      <input type="text" class="message-box" placeholder="Message" />
+                    </div>
+                    <div class="btn_box">
+                      <button>
+                        Get Quote!
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+    <!--End Popup-->
   </div>
 
 
@@ -406,6 +450,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+  <!--Quote Popup-->
+  <script src="./js/popup.js"></script>
+  <!--End Quote Popup-->
 
 </body>
 
