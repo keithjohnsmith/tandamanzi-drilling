@@ -469,7 +469,9 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  color: #252525;
+  background: linear-gradient(to right, rgba(255, 102, 0, 0.548),  rgba(255, 102, 0, 0) );
+  padding: 15px;
+  border-radius: 25px;
 }
 
 .slider_section .detail-box h1 {
