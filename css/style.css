@@ -48,6 +48,28 @@ body {
   padding-bottom: 90px;
 }
 
+.container ,.gallery{
+  
+  display: flex;
+  max-width: 1380px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.container .gallery-images {
+  height: 180px;
+  width: 200px;
+  padding: 5px;
+  
+}
+
+h1 ,.gallery{
+  text-align: center;
+  transform: upperCase;
+}
+
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
