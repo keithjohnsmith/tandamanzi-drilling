@@ -48,7 +48,7 @@ body {
   padding-bottom: 90px;
 }
 
-.container ,.gallery{
+.gallery{
   
   display: flex;
   max-width: 1380px;
@@ -58,7 +58,7 @@ body {
   
 }
 
-.container .gallery-images {
+.gallery-images {
   height: 180px;
   width: 200px;
   padding: 5px;
