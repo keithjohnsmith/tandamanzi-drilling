@@ -12,23 +12,31 @@ const loadHaulDropdown = document.getElementById("load-haul-dropdown");
 const loadHaulTitle = document.getElementById("load-haul-icon");
 
 
-var arrowDown = <i class="fa fa-caret-down" aria-hidden="true"></i>;
-var arrowUp =  <i class="fa fa-caret-up" aria-hidden="true"></i>;
+function createIcon(className) {
+  const icon = document.createElement("i");
+  icon.className = className;
+  icon.setAttribute("aria-hidden", "true");
+  icon.id = icon;
+  return icon;
+}
 
 function toggleText(readMoreLink, longText, icon) {
     if (longText.style.display === "none") {
       longText.style.display = "block";
       longText.style.maxHeight = longText.scrollHeight + "px";
       icon.className = "fa fa-caret-up";
+      icon.display = "none"
     } else {
       longText.style.maxHeight = "1px";
       setTimeout(function() {
         longText.style.display = "none";
       }, 10);
       icon.className = "fa fa-caret-down";
+      icon.display = "none"
     }
   }
 
+  drillRigBtn.appendChild(createIcon("fa fa-caret-down"));
   drillRigBtn.addEventListener("click", function() {
     toggleText(drillRigBtn, drillRigsDropdown, drillRigsTitle);
     // Hide longText2 if it's currently visible
@@ -39,7 +47,8 @@ function toggleText(readMoreLink, longText, icon) {
         toggleText(loadHaulBtn, loadHaulDropdown, loadHaulTitle);
       }
   });
-
+ 
+  serviceVehicleBtn.appendChild(createIcon("fa fa-caret-down"));
   serviceVehicleBtn.addEventListener("click", function() {
     toggleText(serviceVehicleBtn, serviceVehilceDropdown, serviceVehicleTitle);
     // Hide longText2 if it's currently visible
@@ -51,6 +60,7 @@ function toggleText(readMoreLink, longText, icon) {
       }
   });
 
+  loadHaulBtn.appendChild(createIcon("fa fa-caret-down"));
   loadHaulBtn.addEventListener("click", function() {
     toggleText(loadHaulBtn, loadHaulDropdown, loadHaulTitle);
     // Hide longText2 if it's currently visible
