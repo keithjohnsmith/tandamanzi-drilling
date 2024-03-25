@@ -232,15 +232,25 @@ a:focus {
 }
 
 .breadcrumbs{
-  background-image: url(/images/borehole-drilling3.png);
+  background-image: url(/images/tandamanzi-vehicle.jpg);
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   width:100%;
   height: 100%;
   text-align: center; 
   margin:0;
-  padding: 75px;
+  padding: 150px;
   
+}
+
+.breadcrumbs-heading{
+  background: linear-gradient(to right, rgba(255, 102, 0, 0.767),  rgba(255, 102, 0, 0) );
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .fleet-heading-text{
