@@ -1020,6 +1020,7 @@ padding-bottom: 15%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          justify-content: space-evenly;
 }
 
 .project_section .filter_box h6 {
@@ -1027,8 +1028,9 @@ padding-bottom: 15%;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  padding: 5px 10px;
+  padding: 6px 11px;
   font-weight: normal;
+  border-radius: 25px;
 }
 
 .project_section .filter_box .owl-filter-bar {
@@ -1056,6 +1058,7 @@ padding-bottom: 15%;
 
 .project_section .box .img-box img {
   width: 100%;
+  border-radius: 25px;
 }
 
 .project_section .box .img-box .pin_link {
@@ -1079,6 +1082,12 @@ padding-bottom: 15%;
           transform: translate(-50%, -50%);
   color: rgb(255,102,0);
   font-size: 20px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.project_section .box .img-box:hover .pin_link {
+  opacity: 1; /* Visible on hover */
 }
 
 .project_section .box .detail-box {
@@ -1089,6 +1098,12 @@ padding-bottom: 15%;
   color: #ffffff;
   visibility: hidden;
   opacity: 0;
+  position: absolute;
+  top: 75%;
+  bottom:0; 
+  text-align: center;
+  width:100%;
+  border-radius:  0 0 25px 25px;
 }
 
 .project_section .box .detail-box h5 {
@@ -1103,6 +1118,7 @@ padding-bottom: 15%;
 .project_section .project_carousel {
   margin-top: 45px;
   padding: 0 45px;
+  border-radius: 25px;
 }
 
 .project_section .project_carousel .owl-nav {
@@ -1113,6 +1129,7 @@ padding-bottom: 15%;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
+  gap: 15px;
 }
 
 .project_section .project_carousel .owl-nav button {
@@ -1123,6 +1140,8 @@ padding-bottom: 15%;
   color: #ffffff;
   font-size: 28px;
   font-weight: bold;
+  border-radius: 25px;
+  
 }
 
 .project_section .project_carousel .owl-nav button:hover {
@@ -1131,10 +1150,12 @@ padding-bottom: 15%;
 
 .project_section .project_carousel .owl-nav button.owl-prev {
   left: -25px;
+  padding: 5px;
 }
 
 .project_section .project_carousel .owl-nav button.owl-next {
   right: -25px;
+  padding: 5px;
 }
 
 .client_section {
@@ -1297,7 +1318,7 @@ padding-bottom: 15%;
   padding: 8px 25px;
   background-color: rgb(255,102,0);
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 25px;
   -webkit-transition: all .3s;
   transition: all .3s;
   border: none;
@@ -1359,10 +1380,10 @@ padding-bottom: 15%;
   border: none;
   text-transform: uppercase;
   display: inline-block;
-  padding: 12px 55px;
+  padding: 8px 55px;
   background-color: rgb(255,102,0);
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 25px;
   -webkit-transition: all .3s;
   transition: all .3s;
   border: none;
@@ -1524,7 +1545,7 @@ padding-bottom: 15%;
   padding: 10px 45px;
   background-color: rgb(255,102,0);
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 25px;
   -webkit-transition: all .3s;
   transition: all .3s;
   border: none;
