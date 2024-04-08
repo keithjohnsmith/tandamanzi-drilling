@@ -775,6 +775,7 @@ a:focus {
 
 .service-subheading{
   color: rgb(255,102,0);
+  margin-bottom: 15%;
 }
 
 .service-icons{
@@ -785,8 +786,7 @@ a:focus {
 }
 
 .centered-readme{
-  flex-direction: row;
-  justify-content: center;
+  right: 37.5%;
 }
 
 #long-text-borehole {
@@ -900,7 +900,7 @@ padding-bottom: 15%;
 .about_section .img-box::before, .about_section .img-box::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 46%;
   width: 45px;
   height: 70%;
   background-color: rgb(255,102,0);
