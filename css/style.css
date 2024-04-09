@@ -250,12 +250,14 @@ a:focus {
 }
 
 .breadcrumbs-heading{
-  background: linear-gradient(to right, rgba(255, 102, 0, 0.767),  rgba(255, 102, 0, 0) );
-  padding: 15px;
+  font-size: 120px;
+  text-shadow: -6px 6px 15px #515151;
+  padding-top: 15px;
   border-radius: 25px;
   color: white;
   margin-left: 30%;
   margin-right: 30%;
+  
 }
 
 .fleet-heading-text{

@@ -21,17 +21,20 @@ function toggleText(readMoreLink, longText) {
       longText.style.display = "block";
       longText.style.maxHeight = longText.scrollHeight + "px";
       readMoreLink.textContent = "Read Less";
+      readMoreLink.style.color = "rgb(255,102,0)";
     } else {
       longText.style.maxHeight = "1px";
       setTimeout(function() {
         longText.style.display = "none";
       }, 10);
       readMoreLink.textContent = "Read More";
+      readMoreLink.style.color = "#515151";
     }
   }
 
   readMoreLinkBorehole.addEventListener("click", function() {
     toggleText(readMoreLinkBorehole, longTextBorehole);
+    event.preventDefault();
     // Hide longText2 if it's currently visible
     if (longTextDiamond.style.display !== "none") {
       toggleText(readMoreLinkDiamond, longTextDiamond);
@@ -52,6 +55,7 @@ function toggleText(readMoreLink, longText) {
 
   readMoreLinkDiamond.addEventListener("click", function() {
     toggleText(readMoreLinkDiamond, longTextDiamond);
+    event.preventDefault();
     // Hide longText1 if it's currently visible
     if (longTextBorehole.style.display !== "none") {
       toggleText(readMoreLinkBorehole, longTextBorehole);
@@ -72,6 +76,7 @@ function toggleText(readMoreLink, longText) {
   
  readMoreLinkHaul.addEventListener("click", function() {
     toggleText(readMoreLinkHaul, longTextHaul);
+    event.preventDefault();
     // Hide longText1 if it's currently visible
     if (longTextBorehole.style.display !== "none") {
       toggleText(readMoreLinkBorehole, longTextBorehole);
@@ -92,6 +97,7 @@ function toggleText(readMoreLink, longText) {
 
   readMoreLinkRevCirc.addEventListener("click", function() {
     toggleText(readMoreLinkRevCirc, longTextRevCirc);
+    event.preventDefault();
     // Hide longText1 if it's currently visible
     if (longTextBorehole.style.display !== "none") {
       toggleText(readMoreLinkBorehole, longTextBorehole);
@@ -112,6 +118,7 @@ function toggleText(readMoreLink, longText) {
 
   readMoreLinkBlast.addEventListener("click", function() {
     toggleText(readMoreLinkBlast, longTextBlast);
+    event.preventDefault();
     // Hide longText1 if it's currently visible
     if (longTextBorehole.style.display !== "none") {
       toggleText(readMoreLinkBorehole, longTextBorehole);
