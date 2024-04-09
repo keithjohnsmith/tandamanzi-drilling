@@ -1288,13 +1288,14 @@ padding-bottom: 15%;
   width: 175px;
   min-width: 175px;
   height: 125px;
-  margin-right: 25px;
-  padding-right: 25px;
-  -webkit-clip-path: polygon(0 0, 85% 0, 85% 35%, 100% 50%, 85% 65%, 85% 100%, 0 100%);
-          clip-path: polygon(0 0, 85% 0, 85% 35%, 100% 50%, 85% 65%, 85% 100%, 0 100%);
+  /*margin-right: 25px;
+  padding-right: 25px;*/
+  -webkit-clip-path: circle(35% at 50% 50%);
+          clip-path: circle(35% at 50% 50%);
+          
   -webkit-transition: all .3s;
   transition: all .3s;
-}
+} 
 
 .why_us_section .why_us_container .box .img-box img {
   width: 45px;
