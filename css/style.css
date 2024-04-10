@@ -287,7 +287,7 @@ a:focus {
 }
 
 .breadcrumbs {
-  background-image: url(/images/tandamanzi-vehicle.jpg);
+  background-image: url(../images/tandamanzi-vehicle.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -308,6 +308,43 @@ a:focus {
   margin-left: 30%;
   margin-right: 30%;
   
+}
+
+@media (max-width: 500px) {
+  .breadcrumbs-heading {
+    font-size: 40px;
+    text-align: left;
+  }
+  
+  .gallery {
+      --s: 100px; /* control the size */
+      --g: 10px;  /* control the gap */
+      --f: 1.5;   /* control the scale factor */
+      
+      display: grid;
+      gap: var(--g);
+      width: calc(3*var(--s) + 2*var(--g));
+      aspect-ratio: 1;
+      grid-template-columns: repeat(4,auto);
+    }
+    
+    .gallery > img {
+      width: 0;
+      height: 0;
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      filter: grayscale(10%);
+      transition: .35s linear;
+      border-radius: 25px;
+    }
+    
+    .gallery img:hover{
+      filter: grayscale(0);
+      width:  calc(var(--s)*var(--f));
+      height: calc(var(--s)*var(--f));
+    }
 }
 
 .fleet-heading-text{
@@ -941,6 +978,12 @@ padding-bottom: 15%;
 
 .about_section .img-box {
   position: relative;
+    
+}
+
+.orange-bars{
+    display: grid;
+    justify-content: center;
 }
 
 .about_section .img-box img {
