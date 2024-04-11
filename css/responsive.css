@@ -40,18 +40,41 @@
 
   .project_section .filter_box {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .project_section .filter_box .owl-filter-bar {
     margin-left: 0;
     margin-top: 10px;
+    align-items: center;
   }
 
   .project_section .filter_box .owl-filter-bar a {
     padding: 10px;
     display: inline-block;
   }
+}
+
+#diamond-core-h2{
+  margin-top: 730%;
+}
+
+#reverse-circ-h2{
+  margin-left: -350%;
+  margin-top: 500px;
+}
+
+#blast-hole-h2{
+  margin-top: 730%;
+}
+
+#rotary-air-h2{
+  margin-top: 500px;
+  margin-left: -350%;
+}
+
+#borehole-h2{
+  margin-top: 730%;
 }
 
 @media (max-width: 768px) {
@@ -74,17 +97,78 @@
   }
 
   .info_section .contact_nav {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    padding-top: 0;
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .info_section .contact_nav a:not(:nth-last-child(1)) {
     margin-bottom: 25px;
   }
 
+  .info_section .info_post .post_box{
+    justify-content: center;
+  }
+
   .info_section .contact_nav a {
-    align-items: flex-start;
+    /* align-items: flex-start;
+    text-align: left; */
+    
+  }
+
+  .info_section .info_form{
+    text-align: left;
+  }
+
+
+  .info_section .info_form button{
+    
+  }
+  .heading_container{
+    margin-top: 0;
+    margin-bottom: -75px;
+  }
+
+  /* Fleet Section Responsiveness - DO NOT TOUCH */
+
+  #diamond-core-h2{
+    margin-top: 0%; 
+    margin-bottom: -500px;
+    
+  } 
+
+  #reverse-circ-h2{
+    margin-top: -80%;
+    margin-left: 0%;
+  }
+
+  #blast-hole-h2{
+    margin-top: 0%;
+  }
+
+  #rotary-air-h2{
+    margin-top: -80%;
+    margin-left: 0%;
+  }
+
+  #borehole-h2{
+    margin-top: 0%;
+  }
+
+  #drill-rigs-dropdown{
+    padding: 0;
+  }
+
+  /* End Fleet Section */
+
+  .info_section .info_bottom .social_box{
+    flex-direction: row;
+    align-items: end;
+  }
+
+  .info_section h4{
     text-align: left;
   }
 
@@ -109,6 +193,7 @@
 
   .why_us_section .why_us_container .box {
     flex-direction: column;
+    align-items: center;
   }
 
   .why_us_section .why_us_container .box .img-box {
@@ -117,9 +202,8 @@
     height: 160px;
     margin-right: 0;
     padding-right: 0;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    clip-path: polygon(0 85%, 0 0, 100% 0, 100% 85%, 65% 85%, 50% 100%, 35% 85%);
+    clip-path: circle(35% at 50% 50%);
+    justify-content: center;
 
   }
 
@@ -131,10 +215,27 @@
 @media (max-width: 480px) {
   .slider_section .detail-box h1 {
     font-size: 2rem;
+  }  
+
+  .heading_container{
+    margin-top: 20px;
+  }
+
+  .container{
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .client_section .box {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 350px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: inherit;
+    margin-right: auto;
   }
 
   .client_section .box .img-box {
