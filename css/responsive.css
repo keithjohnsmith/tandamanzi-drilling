@@ -77,6 +77,46 @@
   margin-top: 730%;
 }
 
+#fourbyfour-h2{
+  margin-top: 730%;
+}
+
+#fuel-bowsers-h2{
+  margin-top: 500px;
+  margin-left: -350%;
+}
+
+#water-bowser-h2{
+  margin-top: 730%;
+}
+
+#cat-tlb-h2{
+  margin-top: 500px;
+  margin-left: -350%;
+}
+
+#tractor-h2{
+  margin-top: 730%;
+}
+
+#excavators-h2{
+  margin-top: 730%;
+}
+
+#tipper-truck-h2{
+  margin-top: 500px;
+  margin-left: -350%;
+}
+
+#rock-breaers-h2{
+  margin-top: 730%;
+}
+
+#lowbed-h2{
+  margin-top: 500px;
+  margin-left: -350%;
+}
+
 @media (max-width: 768px) {
   .about_section .img-box {
     margin-top: 45px;
@@ -112,20 +152,21 @@
     justify-content: center;
   }
 
-  .info_section .contact_nav a {
-    /* align-items: flex-start;
-    text-align: left; */
+  /* .info_section .contact_nav a {
+    align-items: flex-start;
+    text-align: left; 
     
-  }
+  } */
 
   .info_section .info_form{
     text-align: left;
   }
 
 
-  .info_section .info_form button{
+  /* .info_section .info_form button{
     
-  }
+  } */
+
   .heading_container{
     margin-top: 0;
     margin-bottom: -75px;
@@ -161,7 +202,59 @@
     padding: 0;
   }
 
+  #service-vehicle-dropdown{
+    padding: 0;
+  }
+
+  #load-haul-dropdown{
+    padding: 0;
+  }
+
+  #fourbyfour-h2{
+    margin-top: 0%;
+  }
+
+  #fuel-bowsers-h2{
+    margin-top: -80%;
+    margin-left: 0%;
+  }
+
+  #water-bowser-h2{
+    margin-top: 0%;
+  }
+
+  #cat-tlb-h2{
+    margin-top: -80%;
+    margin-left: 0%;
+  }
+
+  #tractor-h2{
+    margin-top: 0%;
+  }
+
+  #excavators-h2{
+    margin-top: 0%;
+  }
+
+  #tipper-truck-h2{
+    margin-top: -80%;
+    margin-left: 0%;
+  }
+
+  #rock-breaers-h2{
+    margin-top: 0%;
+  }
+
+  #lowbed-h2{
+    margin-top: -80%;
+    margin-left: 0%;
+  }
+
   /* End Fleet Section */
+
+  .h2-mobile-responsive{
+    margin-bottom: 100px;
+  }
 
   .info_section .info_bottom .social_box{
     flex-direction: row;
